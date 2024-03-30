@@ -1,0 +1,9 @@
+<h1>books I read</h1>
+<form action="/view/create" method="post">
+    <div><input type="text" name="value"></div>
+    <div><input type="submit" name="add"></div>
+<div>
+    {{ range .Books }}
+    <p>{{.}}</p>
+    {{ end }}
+</div>
